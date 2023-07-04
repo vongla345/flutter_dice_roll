@@ -10,14 +10,20 @@ class MyApp extends StatelessWidget {
 
   //this is my function now
   //this in gonnga change to check git pull
+  // another changes make for check new branch
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: HomePage(
         Colors.blue,
         Colors.purple,
       ),
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme:
+            ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 212, 24, 24)),
+      ),
     );
   }
 }
