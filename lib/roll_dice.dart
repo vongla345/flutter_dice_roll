@@ -4,7 +4,9 @@ import 'dart:math';
 final ramdomize = Random();
 
 class DiceRoller extends StatefulWidget {
-  const DiceRoller({super.key});
+  const DiceRoller({
+    Key key,
+  }) : super(key: key);
 
   @override
   State<DiceRoller> createState() => _DiceRollerState();
@@ -19,6 +21,7 @@ class _DiceRollerState extends State<DiceRoller> {
     });
   }
 
+  // this is a new method for rolling a dice
   @override
   Widget build(BuildContext context) {
     return Column(
