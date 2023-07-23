@@ -2,7 +2,7 @@ import 'package:demo_app/roll_dice.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage(this.firstColor, this.secondColor, {super.key});
+  const HomePage(this.firstColor, this.secondColor, {});
 
   final Color firstColor;
   final Color secondColor;

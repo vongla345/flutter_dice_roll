@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 class StyleText extends StatelessWidget {
   final String text;
   const StyleText({
-    required this.text,
-    super.key,
-  });
+    Key key,
+    this.text,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
